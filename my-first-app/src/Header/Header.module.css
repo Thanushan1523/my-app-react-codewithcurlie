@@ -1,0 +1,10 @@
+.Header h1 {
+    display: inline-block;
+ }
+
+
+.Header{
+   text-align:right;
+    color: rgb(207, 4, 4);
+    
+}
