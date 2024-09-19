@@ -8,7 +8,7 @@ import UserGreat from "./UserGreat"
 function App() {
   return(
     <>
-    <UserGreat isLogIn ={true}  username ="wurile"/>
+    <UserGreat isLogIn ={false}  username ="wurile"/>
     </>
     
  
