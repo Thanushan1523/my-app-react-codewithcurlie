@@ -14,11 +14,11 @@ const loginPrompt= <h2 className="login-prompt"> please login to continue</h2>
 return ( props.isLogIn ? successMessage   :loginPrompt )
 
 
-UserGreat.propsTypes ={
+UserGreat.PropTypes ={
     isLogIn :PropTypes.bool,
     username:PropTypes.string
 }
-UserGreat.defaultProps={
+UserGreat.defaultProps ={
     isLogIn :true,
     username:"guest"
 }
