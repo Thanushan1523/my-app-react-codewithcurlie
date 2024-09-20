@@ -4,12 +4,13 @@ import Body from "./Body";
 import Card from "./Card";
 import Student from "./Student";
 import UserGreat from "./UserGreat"
+import List from "./List";
 
 function App() {
   return(
     <>
-    <UserGreat isLogIn ={true}  username ="wurile"/>
-    <UserGreat isLogIn ={false}    />
+ 
+    <List/>
     </>
     
  
