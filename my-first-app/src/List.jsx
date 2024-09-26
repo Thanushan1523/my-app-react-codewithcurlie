@@ -4,8 +4,8 @@ function List(){
     veggies.sort((a,b) =>a.qty -b.qty) 
 
     // const listItems= veggies.map( veg => <li> {veg} </li>)
-    const listItems= veggies.map( veg => <li key={veg.id}> {veg.name} : &nbsp; <b >{veg.qty}</b></li>)
-    return(listItems)
+    // const listItems= veggies.map( veg => <li key={veg.id}> {veg.name} : &nbsp; <b >{veg.qty}</b></li>)
+    return(ListItems)
 }
 
 export default List
