@@ -5,21 +5,12 @@ import Card from "./Card";
 import Student from "./Student";
 import UserGreat from "./UserGreat"
 import List from "./List";
+import Button from "./Button";
 
 function App() {
-  const veggies =[{id:1,name:"onion",qty:9},{id:2,name:"tomato",qty:9},{id:3,name:"carrot" ,qty:10}];
-  const fruits =[{id:1,name:"hi",qty:9},{id:2,name:"ty",qty:9},{id:3,name:"f" ,qty:10}];
-  return(
-    
- <>
- <List items ={veggies} category="vegetables" />
- <List items ={fruits} category="fruits" />
- </>
-    
-    
- 
-   );
-
+  
+ return(<Button/>);
+   
 
 
 }
@@ -31,3 +22,16 @@ export default App;
     // <Card/>
     
     // </>
+
+
+// list.jsx//
+//     const veggies =[{id:1,name:"onion",qty:9},{id:2,name:"tomato",qty:9},{id:3,name:"carrot" ,qty:10}];
+//   const fruits =[{id:1,name:"hi",qty:9},{id:2,name:"ty",qty:9},{id:3,name:"f" ,qty:10}];
+//   return(
+    
+//  <>
+//  <List items ={veggies} category="vegetables" />
+//  <List items ={fruits} category="fruits" />
+//  </>
+    
+    
