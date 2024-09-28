@@ -58,6 +58,15 @@ margin: 0;
   margin: 0;
   }
 
+.list-category{
+    font: size 2.5em;
+  }
+
+
+
+.list-items{
+    font: size 10em; 
+  }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
