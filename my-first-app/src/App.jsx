@@ -6,6 +6,7 @@ import Student from "./Student";
 import UserGreat from "./UserGreat"
 import List from "./List";
 import Button from "./Button";
+import ProfilePic from "./ProfilePic";
 
 function App() {
   
