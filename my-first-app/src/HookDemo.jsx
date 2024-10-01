@@ -1,10 +1,15 @@
 
 import React ,{useState} from 'react';
+
+
 function HookDemo(){
- let [name ,setName]=useState();
+ const [name ,setName]=useState("guest");
+ const [age ,setAge]=useState(0);
  const updateName =() =>{
     setName("thanushan");
  }
+
+ const incrementAge = () =>{setAge (age + 1)}
  return(
     <div>
         <p>
@@ -13,7 +18,14 @@ function HookDemo(){
         <button onClick={updateName}>
             click here
         </button>
+        <p>
+            here age:{age}
+        </p>
+        <button onClick={incrementAge}>
+            click here
+        </button>
     </div>
+    
  )
 }
 
