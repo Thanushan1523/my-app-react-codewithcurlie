@@ -8,11 +8,12 @@ import List from "./List";
 import Button from "./Button";
 import ProfilePic from "./ProfilePic";
 import HookDemo from "./HookDemo";
+import MyComponent from "./MyCounter";
 
 
 function App() {
   
- return(<HookDemo/>);
+ return(<MyComponent/>);
    
 
 
