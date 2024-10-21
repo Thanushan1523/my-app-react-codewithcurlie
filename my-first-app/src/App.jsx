@@ -9,11 +9,11 @@ import Button from "./Button";
 import ProfilePic from "./ProfilePic";
 import HookDemo from "./HookDemo";
 import MyComponent from "./MyCounter";
-
+import HandlerDemo from "./HandlerDemo";
 
 function App() {
   
- return(<MyComponent/>);
+ return(<HandlerDemo/>);
    
 
 
