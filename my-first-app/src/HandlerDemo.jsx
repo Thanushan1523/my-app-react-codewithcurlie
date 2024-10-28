@@ -7,7 +7,8 @@ function HandlerDemo(){
     const [name,setName] =useState(" ");
     const [Qty ,setQty] =useState(1);
     const [comment ,setComment] =useState("");
-    const [payment ,setPayment] =useState("")
+    const [payment ,setPayment] =useState("");
+    const [ship ,setShip] =useState("")
 
     function handleInput(event){
         setName(event.target.value)
@@ -23,7 +24,9 @@ function HandlerDemo(){
     function handlePayment(event){
         setPayment(event.target.value)
     }
-
+    function handleShip(event){
+        setShip(event.target.value)
+    }
 
 
     return (
@@ -43,11 +46,14 @@ function HandlerDemo(){
             </select>
             <p>mode of payment: {payment}</p>
 
-                
+            <label> <input  type="radio" value="pickup" checked={ship ==="pickup"} onChange={handleShip}/>pickup</label> 
+            <br/>
+            <label><input  type="radio" value="delivery" checked={ship ==="delivery"} onChange={handleShip}/>delivery </label>  
+            <p>ship mode :{ship}</p>      
         </div>
 
     )
-
+ 
 }
 
 
