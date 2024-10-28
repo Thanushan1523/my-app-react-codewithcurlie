@@ -35,7 +35,15 @@ function HandlerDemo(){
             <p>Quantity:{Qty}</p>
             <textarea value={comment} onChange={handleComment} placeholder="enter instruction"/>
             <p >comment:{comment}</p>
-            <select value={payment} onChange={handlePayment}> </select>
+            <select value={payment} onChange={handlePayment}>
+                <option value={""}>select any options</option> 
+                <option value={"visa"}>visa</option>
+                <option value={"master"}>master</option>
+                <option value={"giftcard"}>giftcard</option>
+            </select>
+            <p>mode of payment: {payment}</p>
+
+                
         </div>
 
     )
