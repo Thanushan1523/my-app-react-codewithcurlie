@@ -6,7 +6,8 @@ import React ,{useState} from "react";
 function HandlerDemo(){
     const [name,setName] =useState(" ");
     const [Qty ,setQty] =useState(1);
-    const [comment ,setComment] =useState("")
+    const [comment ,setComment] =useState("");
+    const [payment ,setPayment] =useState("")
 
     function handleInput(event){
         setName(event.target.value)
@@ -18,6 +19,12 @@ function HandlerDemo(){
     function handleComment(event){
         setComment(event.target.value)
     }
+    
+    function handlePayment(event){
+        setPayment(event.target.value)
+    }
+
+
 
     return (
         <div>
@@ -28,6 +35,7 @@ function HandlerDemo(){
             <p>Quantity:{Qty}</p>
             <textarea value={comment} onChange={handleComment} placeholder="enter instruction"/>
             <p >comment:{comment}</p>
+            <select value={payment} onChange={handlePayment}> </select>
         </div>
 
     )
