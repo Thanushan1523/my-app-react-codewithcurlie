@@ -10,10 +10,10 @@ import ProfilePic from "./ProfilePic";
 import HookDemo from "./HookDemo";
 import MyComponent from "./MyCounter";
 import HandlerDemo from "./HandlerDemo";
-
+import ToDoApp from "./ToDoApp";
 function App() {
   
- return(<HandlerDemo/>);
+ return(<ToDoApp/>);
    
 
 
