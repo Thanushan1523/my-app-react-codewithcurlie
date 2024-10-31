@@ -11,9 +11,10 @@ import HookDemo from "./HookDemo";
 import MyComponent from "./MyCounter";
 import HandlerDemo from "./HandlerDemo";
 import ToDoApp from "./ToDoApp";
+import MyComponentt from "./MyComponent";
 function App() {
   
- return(<ToDoApp/>);
+ return(<MyComponentt/>);
    
 
 
