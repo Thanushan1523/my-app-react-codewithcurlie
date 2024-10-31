@@ -1,12 +1,18 @@
- import { useState } from "react";
+import { useState } from "react";
 import React  from "react";
 
 
  function ToDoApp (){
-    const[input ,setInput] =useState("") 
+    const[input ,setInput] =useState("")
+    const[todos,setTodo]=useState([]) 
+
     function handleInput(event){
-        setInput(event.target.value)
-    }
+        setInput(event.target.value)}
+    function addTodo(){
+        if(input != "")
+        setTodo([...todos ,input])
+        setInput("");}
+        
     return(
         <div>
             <hi> ToDo App</hi>
@@ -14,9 +20,10 @@ import React  from "react";
             <br/>
             <br/>
             <br/>
-            <button> Add ToDo</button>
+            <button onClick={addTodo}> Add ToDo</button>
             <ul>
-                <li>list</li>
+                {todos.map((todo ,index) =>(<li key={index}>{todo}</li>))}
+                
             </ul>
 
         </div>
