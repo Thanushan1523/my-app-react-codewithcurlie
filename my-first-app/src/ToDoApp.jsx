@@ -14,15 +14,15 @@ import React  from "react";
         setInput("");}
         
     return(
-        <div>
-            <hi> ToDo App</hi>
-            <input type="text" value={input} onChange={handleInput}  placeholder="enter the task"/>
+        <div className="todo-container">
+            <h1 className="todo-heading"> ToDo App</h1>
+            <input className="todo-input " type="text" value={input} onChange={handleInput}  placeholder="enter the task"/>
             <br/>
             <br/>
             <br/>
-            <button onClick={addTodo}> Add ToDo</button>
-            <ul>
-                {todos.map((todo ,index) =>(<li key={index}>{todo}</li>))}
+            <button className="todo-button" onClick={addTodo}> Add ToDo</button>
+            <ul className="todo-ul">
+                {todos.map((todo ,index) =>(<li className="todo-list" key={index}>{todo}</li>))}
                 
             </ul>
 
