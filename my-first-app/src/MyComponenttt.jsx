@@ -5,11 +5,13 @@ function MyComponenttt (){
 
     function handleUpdateFood(){
         const newFood= document.getElementById("foodInput").value;
-        document.getElementById("foodInput").value="";setFoods([...foods , newFood]);
+        document.getElementById("foodInput").value="";
+        setFoods(f=>[...f , newFood]);
 
     }
 
-    function handleRemoveFood(){
+    function handleRemoveFood(index){
+        setFoods(foods.filter((_,i)=> i!== index));
 
     }
 
@@ -18,9 +20,10 @@ function MyComponenttt (){
         <div>
            <h2> my favorite fooods </h2>
            <ul>{foods.map((food ,index)=> 
-            <li key={index}>
+            <li key={index} onClick={()=>handleRemoveFood(index)}>
                 {food}
-            </li>)}
+            </li>
+        )}
            </ul> 
            <input type="text" id="foodInput" placeholder="enter your favor food"/>
            <button onClick={handleUpdateFood}>add button</button>
