@@ -4,6 +4,8 @@ function MyComponenttt (){
     const [foods ,setFoods]=useState(["idly", "dosa" ,"poha"]);
 
     function handleUpdateFood(){
+        const newFood= document.getElementById("foodInput").value;
+        document.getElementById("foodInput").value="";setFoods([...foods , newFood]);
 
     }
 
@@ -15,7 +17,13 @@ function MyComponenttt (){
     return(
         <div>
            <h2> my favorite fooods </h2>
-           <ul>{foods.map((food ,index)=> <li key={index}>{food}</li>)}</ul> 
+           <ul>{foods.map((food ,index)=> 
+            <li key={index}>
+                {food}
+            </li>)}
+           </ul> 
+           <input type="text" id="foodInput" placeholder="enter your favor food"/>
+           <button onClick={handleUpdateFood}>add button</button>
         </div>
     );
 }
