@@ -16,10 +16,10 @@ function MyComponenet4(){
     }
 
     function handleRemoveCars (index){
-
+        setCars(c => c.filter ((_,i)=> i !== index))
 
     }
-     
+   
     function handleCarYear(event){
         setCarYear(event.target.value);
 
@@ -39,10 +39,8 @@ function MyComponenet4(){
             <h2> list of car objectes</h2>
             <ul>
                 {cars.map((car,index)=>
-                <li key={index}>
+                <li key={index} onClick={()=>handleRemoveCars(index)}>
                     {car.year}    {car.make }  {car.model}
-                    
-                   
                     
                     
                 </li>)}
