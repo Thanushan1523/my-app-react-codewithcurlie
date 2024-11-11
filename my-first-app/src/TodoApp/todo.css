@@ -28,6 +28,11 @@ button{
 button:hover{
     background-color: brown;
 }
+button:hover{
+    background-color: brown;
+    color: aquamarine;
+}
+
 
 
 completed{
