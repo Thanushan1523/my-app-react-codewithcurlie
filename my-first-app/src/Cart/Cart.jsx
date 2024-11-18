@@ -13,7 +13,26 @@ function Cart(){
         description : 'tatsty '
        } 
     ]
-    return(<h1>hi</h1>)
+    const addToCart =()=>{
+
+    }
+
+    const removeFromCart =()=>{
+
+    }
+
+    const updateQuantity =()=>{
+
+    }
+    return(<div>
+        <h1>Items</h1>
+        <div>
+            {items.map((item)=>(<><h3>{item.name}</h3><p>{item.description}</p>
+            <p> price: {item.price}</p>
+            <button onClick={()=> addToCart(item)}> Addtocart </button></>
+            ))}
+        </div>
+        </div>)
 
 }
 
