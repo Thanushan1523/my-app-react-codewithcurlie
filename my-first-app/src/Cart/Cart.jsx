@@ -13,9 +13,17 @@ function Cart(){
         description : 'tatsty '
        } 
     ]
-    const addToCart =()=>{
-
-    }
+    const addToCart =(item)=>{
+        const existingItem =cart.find((cartItem)=> cartItem.id === item.id)
+        if (existingItem){
+            const existingItemUpdate =cart.map((cartItem)=> 
+            cartItem.id === item.id ? {...cartItem ,quantity : cartItem.quantity +1 } : cartItem)
+            setCart(existingItemUpdate)
+        }
+        else{
+            setCart([...cart,{...item,quantity:1}]);
+        }
+    };
 
     const removeFromCart =()=>{
 
@@ -31,6 +39,11 @@ function Cart(){
             <p> price: {item.price}</p>
             <button onClick={()=> addToCart(item)}> Addtocart </button></>
             ))}
+
+            <div>
+                <h1>Cart</h1>
+                {cart.length === 0 && <p> NO items in the cart </p>}
+            </div>
         </div>
         </div>)
 
