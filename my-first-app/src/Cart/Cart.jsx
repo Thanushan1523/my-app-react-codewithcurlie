@@ -39,9 +39,14 @@ function Cart(){
         const filteredCart = updatedCart.filter
         (item=>
             item.quantity >0 
-        )
+        );
         setCart(filteredCart);
     }
+
+    const totalItems = cart.reduce((sum, item)=>
+    sum + item.quantity , 0);
+    const totalPrice =cart.reduce((sum,item)=>sum + item.price*item.quantity , 0)
+
     return(<div>
         <h1>Items</h1>
         <div>
@@ -66,7 +71,10 @@ function Cart(){
                        ))}
                             </ul>   
                     
-                 
+                 <p>Total items:<span> {totalItems}</span>
+                 </p>
+                 <p>Total items:<span> {totalPrice}</span>
+                 </p>
                 </div>
                 )}
             </div>
