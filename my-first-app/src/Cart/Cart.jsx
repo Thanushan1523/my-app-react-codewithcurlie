@@ -25,12 +25,22 @@ function Cart(){
         }
     };
 
-    const removeFromCart =()=>{
-
+    const removeFromCart =(id)=>{
+        setCart(cart.filter((item)=>item.id !==id))
     }
 
-    const updateQuantity =()=>{
-
+    const updateQuantity =(id,amount)=>{
+        const updatedCart =cart.map(item => {
+            if(item.id === id){
+                return{...item , quantity:item.quantity +amount}
+            }
+            return item;
+        })
+        const filteredCart = updatedCart.filter
+        (item=>
+            item.quantity >0 
+        )
+        setCart(filteredCart);
     }
     return(<div>
         <h1>Items</h1>
@@ -43,6 +53,22 @@ function Cart(){
             <div>
                 <h1>Cart</h1>
                 {cart.length === 0 && <p> NO items in the cart </p>}
+                {cart.length > 0 && (
+                    <div>
+                     <ul>
+                        {cart.map((item) =>(  
+                        <li key={item.id}>
+                            <span>{item.name} - Quantity {item.quantity}</span>
+                            <button onClick= {()=> updateQuantity(item.id ,1)}> +</button>
+                            <button onClick= {()=> updateQuantity(item.id ,-1)}> - </button>
+                            <button onClick={()=> removeFromCart(item.id)}> Remove </button>
+                            </li>
+                       ))}
+                            </ul>   
+                    
+                 
+                </div>
+                )}
             </div>
         </div>
         </div>)
