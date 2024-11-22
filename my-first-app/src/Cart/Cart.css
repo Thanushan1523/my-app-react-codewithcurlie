@@ -17,9 +17,47 @@
     width: 200px;
     box-shadow: 2px 2px 10px rgba(0 ,0 ,0 , 1);
     border-radius:8px ;
-    background-color: rgb(218, 218, 149);
+    background-color: rgb(232, 153, 211);
 }
-cart-container
 
-cart-button
+.item-box h3{
+    margin-top: 0;
+}
+.item-box p{
+    margin-top:10px 0;
+}
+
+.button{
+    margin-top: 10px;
+    
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(15, 212, 67);
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #d62929;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.cart-container{
+    bo
+}
+
+
 cart-summary-box
+cart-summary

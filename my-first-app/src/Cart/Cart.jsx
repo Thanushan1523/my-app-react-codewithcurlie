@@ -54,7 +54,7 @@ function Cart(){
             {items.map((item)=>(
             <div key={item.id} className="item-box"> <h3>{item.name}</h3><p>{item.description}</p>
             <p> price: {item.price}</p>
-            <button onClick={()=> addToCart(item)}> Addtocart </button></div>
+            <button  className="button" onClick={()=> addToCart(item)}> Addtocart </button></div>
             ))}
 
             <div>
