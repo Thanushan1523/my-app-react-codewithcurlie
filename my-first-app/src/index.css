@@ -1,4 +1,4 @@
-.card{
+/* .card{
   border:1px solid rgb(169, 99, 99);
   border-radius:10px;
   box-shadow: 5px 5px 5px rgb(125, 57, 194);
@@ -118,7 +118,7 @@ margin: 0;
 .todo-button{
   padding: 10px 15px ;
   border: none;
-  background-color: rgb(125, 57, 194);
+  background-color: rgb(154, 122, 185);
   color: beige;
   border-radius: 4px;
   cursor: pointer;
@@ -139,7 +139,7 @@ margin: 0;
   border: 1px solid green;
   border-radius: 4px;
   margin-bottom: 5px;
-}
+} */
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

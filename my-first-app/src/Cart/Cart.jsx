@@ -66,7 +66,7 @@ function Cart(){
                         {cart.map((item) =>(  
                         <li key={item.id}>
                             <span>{item.name} - Quantity {item.quantity}</span>
-                            <div className="cart-button">
+                            <div className="cart-buttons">
                             <button onClick= {()=> updateQuantity(item.id ,1)}> +</button>
                             <button onClick= {()=> updateQuantity(item.id ,-1)}> - </button>
                             <button onClick={()=> removeFromCart(item.id)}> Remove </button>

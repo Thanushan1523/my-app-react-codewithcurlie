@@ -1,4 +1,4 @@
-ul{
+/* ul{
     list-style-type: none;
     padding: 0;
 
@@ -16,14 +16,14 @@ input[type="text"] {
 
 }
 
-/* button{
+button{
     margin-left: 10px;
     padding: 5px 10px;
     background-color: rgb(92, 220, 111);
     color: aliceblue;
     border: none;
     cursor: pointer;
-} */
+}
 
 button:hover{
     background-color: rgb(241, 233, 233);
@@ -37,4 +37,4 @@ button:hover{
 
 completed{
     text-decoration:line ;
-}
+} */
