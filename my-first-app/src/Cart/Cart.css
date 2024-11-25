@@ -86,4 +86,5 @@ li{
 .cart-summary span {
     font-weight: bold;
     color: rgb(14, 13, 13);
+    font-size: 20px;
 }

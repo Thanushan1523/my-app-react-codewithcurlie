@@ -78,7 +78,7 @@ function Cart(){
                     <div className="cart-summary">
                     <p>Total items:<span> {totalItems}</span>
                  </p>
-                 <p>Total items:<span> {totalPrice}</span>
+                 <p>Total Amount:<span> {totalPrice}</span>
                  </p>
                   </div>
                   </div>  
