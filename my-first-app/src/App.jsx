@@ -16,9 +16,10 @@ import MyComponenttt from "./myComponenttt";
 import MyComponenet4 from "./MyComponent4";
 import EnhancedToDo from "./TodoApp/EnhancedToDo";
 import Cart from "./Cart/Cart";
+import UseEffectDemo from "./useEffectDemo";
 function App() {
   
- return(<Cart/>);
+ return(<UseEffectDemo/>);
    
 
 
