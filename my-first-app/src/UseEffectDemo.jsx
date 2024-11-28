@@ -1,5 +1,16 @@
+import React,{useState, useEffect} from "react";
 function UseEffectDemo(){
-    return(<h1>hi</h1>)
+    const [count ,setCount] =useState(0);
+    function addCount(){
+          setCount(C => C+1)
+    }
+
+ useEffect(() => {document.title=`count:${count}`})
+    
+    return(<>
+    <p>count : {count}</p>
+    <button onClick={addCount}>Add</button>
+    </>)
  }
  
  export default UseEffectDemo;
