@@ -5,11 +5,11 @@ function UseEffectDemo(){
           setCount(C => C+1)
     }
 
-//  useEffect(() => {document.title=`count : ${count}`})
- useEffect(() => {document.title=`HI`} ,[])  
+ useEffect(() => {document.title=`count : ${count}`},[])
+//  useEffect(() => {document.title=`HI`} ,[])  
 
 
- 
+
     return(<>
     <p>count : {count}</p>
     <button onClick={addCount}>Add</button>
