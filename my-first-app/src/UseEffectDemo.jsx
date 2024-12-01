@@ -10,7 +10,7 @@ function UseEffectDemo(){
   }
 
     function changeColor(){
-        setColor(c => c ==="blue" ? "red" :"blacks")
+        setColor(c => c ==="blue" ? "red" :"black")
     }
 
 //  useEffect(() => {document.title=`count : ${count}`},[])
