@@ -17,9 +17,10 @@ import MyComponenet4 from "./MyComponent4";
 import EnhancedToDo from "./TodoApp/EnhancedToDo";
 import Cart from "./Cart/Cart";
 import UseEffectDemo from "./useEffectDemo";
+import UseEffExample from "./UseEffExample";
 function App() {
   
- return(<UseEffectDemo/>);
+ return(<UseEffExample/>);
    
 
 
